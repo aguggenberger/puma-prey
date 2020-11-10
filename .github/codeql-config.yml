@@ -6,6 +6,6 @@ paths-ignore:
   - "./public/*"
   - "./package-lock.json"
   - "./*.md"
-  - "*/debug/
-  - "*/bin/*"
-  - "*/packages/*"
+  - "**/debug
+  - "**/bin"
+  - "**/packages"
