@@ -5,7 +5,7 @@ paths-ignore:
   - "./resx/*"
   - "./public/*"
   - "./package-lock.json"
-  - "./*.md"
-  - "**/debug
+  - "./*.md"  
+  - "**/debug"
   - "**/bin"
   - "**/packages"
