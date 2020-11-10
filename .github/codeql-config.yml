@@ -1,0 +1,11 @@
+name: "My CodeQL config"
+
+paths-ignore:
+  - "./node_modules/*"
+  - "./resx/*"
+  - "./public/*"
+  - "./package-lock.json"
+  - "./*.md"
+  - "*/debug/
+  - "*/bin/*"
+  - "*/packages/*"
