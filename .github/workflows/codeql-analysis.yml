@@ -62,17 +62,17 @@ jobs:
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
 
-    #- name: Setup MSBuild Path
-    #  uses: warrenbuckley/Setup-MSBuild@v1
+    - name: Setup MSBuild Path
+      uses: warrenbuckley/Setup-MSBuild@v1
        
-    #- name: Setup NuGet
-    #  uses: NuGet/setup-nuget@v1.0.2
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.2
      
-    #- name: Restore NuGet Packages
-    #  run: nuget restore PumaPrey.sln
+    - name: Restore NuGet Packages
+      run: nuget restore PumaPrey.sln
  
-    #- name: Build and Publish Web App
-    #  run: msbuild PumaPrey.sln /p:Configuration=Release
+    - name: Build and Publish Web App
+      run: msbuild PumaPrey.sln /p:Configuration=Release
 
     #- run: |
     #   make bootstrap
