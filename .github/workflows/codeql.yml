@@ -48,9 +48,10 @@ jobs:
     #   make bootstrap
     #   make release
 
+
     - name: Build .NET with CodeQL
       run: |
         nuget restore PumaPrey.sln
-        msbuild PumaPrey.sln /p:UseSharedCompilation=false /t:rebuild /p:Platform="Any CPU" /p:Configuration="Debug" /p:MvcBuildViews=true
+        msbuild PumaPrey.sln /t:rebuild /p:Platform="Any CPU" /p:Configuration="Release"
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
