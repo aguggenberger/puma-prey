@@ -50,7 +50,7 @@ jobs:
 
     - name: Build .NET with CodeQL
       run: |
-        nuget restore src/VSTSDemoGeneratorV2.sln
+        nuget restore PumaPrey.sln
         msbuild PumaPrey.sln /p:UseSharedCompilation=false /t:rebuild /p:Platform="Any CPU" /p:Configuration="Debug" /p:MvcBuildViews=true
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
